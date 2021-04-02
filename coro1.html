@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Corona</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Health care</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="file:///E:/project/project.html#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Overview</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Symtoms</a> 
+	 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Prevention</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Treatments</a> 
+    
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Health care</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Corona</b></h1>
+	<img src="coro.jpg" width="800" height="400">
+	<br>
+	<br>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Overview</b></h1>
+	<hr style="width:50px;border:5px solid red" class="w3-round">
+    <h4>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face.The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow)</h4>
+	
+  </div>
+  
+  <div class="w3-container" style="margin-top:80px" id="cases">
+  
+	
+ <h3 class="w3-padding-16">Cases in tamil nadu</h3>
+    <p class="w3-wide">Total cases</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">770K</div>
+    </div>
+    <p class="w3-wide">Recovered</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">746K</div>
+    </div>
+    <p class="w3-wide">Death</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:20%">11605</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2100</span><br>
+        Camps in India
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">9.14M</span><br>
+        Cases in India
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">5000</span><br>
+        Camps in Tamil NAdu
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">770K</span><br>
+        Cases in Tamil Nadu
+      </div>
+    </div>
+ </div>
+ 
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Symptoms</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <h4>COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization.</h2>
+<br><h4><b>Most common symptoms:</b></h4>
+<h4>* fever</h4>
+<h4>* dry cough</h4>
+<h4>* tiredness</h4><br>
+<h4><b>Less common symptoms:</b></h4>
+<h4>* aches and pains</h4>
+<h4>* sore throat</h4>
+<h4>* diarrhoea</h4>
+<h4>* conjunctivitis</h4>
+<h4>* headache</h4>
+<h4>* loss of taste or smell</h4>
+<h4>* a rash on skin, or discolouration of fingers or toes</h4><br>
+<h4><b>Serious symptoms:</b></h4>
+<h4>* difficulty breathing or shortness of breath</h4>
+<h4>* chest pain or pressure</h4>
+<h4>* loss of speech or movement</h4>
+<br><h4>Seek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.
+<br>People with mild symptoms who are otherwise healthy should manage their symptoms at home.
+<br>On average it takes 5–6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days.
+  </h4></div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Prevention</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+   <h4>
+Protect yourself and others around you by knowing the facts and taking appropriate precautions. Follow advice provided by your local health authority.
+</h4><br>
+<h4><b>To prevent the spread of COVID-19:</b></h4>
+<h4>* Clean your hands often. Use soap and water, or an alcohol-based hand rub.</h4>
+<h4>* Maintain a safe distance from anyone who is coughing or sneezing.</h4>
+<h4>* Wear a mask when physical distancing is not possible.</h4>
+<h4>* Don’t touch your eyes, nose or mouth.</h4>
+<h4>* Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</h4>
+<h4>* Stay home if you feel unwell.</h4>
+<h4>* If you have a fever, cough and difficulty breathing, seek medical attention.</h4><br>
+<h4>Calling in advance allows your healthcare provider to quickly direct you to the right health facility. This protects you, and prevents the spread of viruses and other infections.
+</h4>
+<h4><b>Masks</b></h4>
+
+<h4>Masks can help prevent the spread of the virus from the person wearing the mask to others. Masks alone do not protect against COVID-19, and should be combined with physical distancing and hand hygiene. Follow the advice provided by your local health authority.
+</h4>
+<hr>
+   </div>
+
+  <!-- The Team -->
+ 
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Treatments</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  
+<h4>To date, there are no specific vaccines or medicines for COVID-19. Treatments are under investigation, and will be tested through clinical trials. World Health Organization</h4>
+<br><h4><b>Self-care</b></h4>
+<h4>If you feel sick you should rest, drink plenty of fluid, and eat nutritious food. Stay in a separate room from other family members, and use a dedicated bathroom if possible. Clean and disinfect frequently touched surfaces.
+<br><br>
+Everyone should keep a healthy lifestyle at home. Maintain a healthy diet, sleep, stay active, and make social contact with loved ones through the phone or internet. Children need extra love and attention from adults during difficult times. Keep to regular routines and schedules as much as possible.
+<br><br>
+It is normal to feel sad, stressed, or confused during a crisis. Talking to people you trust, such as friends and family, can help. If you feel overwhelmed, talk to a health worker or counsellor.
+<br></h4>
+
+  </div>
+
+ 
+ 
+ 
+ 
+ 
+ 
+<!-- End page content -->
+</div>
+
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Project pandrom groups</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+
+    
+
+</body>
+</html>
